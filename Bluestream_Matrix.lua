@@ -23,10 +23,6 @@ status_fb = {}
 status_read = {}
 HeartbeatTime = 3
 
-
-
-
-
 ------------------------------
 --EvenHandlers
 ------------------------------
