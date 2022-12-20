@@ -164,8 +164,6 @@ Switch.Data = function()
         Controls['Mac Address SW1'][port].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
       end
     end
-
-
     message = Switch:ReadLine(TcpSocket.EOL.Any)
   end
 end
@@ -205,8 +203,6 @@ Controls['Reboot Port SW1'][r].EventHandler = function()
   end
 end
 
-
-
 --port reboot SW2
 for s=1,#Controls['Reboot Port SW2'] do
   Controls['Reboot Port SW2'][s].EventHandler = function()
@@ -222,7 +218,6 @@ for s=1,#Controls['Reboot Port SW2'] do
     end,5)
   end
 end
-
 
 --Make Connect Button Visible
 Controls['Connect'].EventHandler = function()
