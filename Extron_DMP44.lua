@@ -169,10 +169,6 @@ function getState()
   end
 end
 
-
-
-
-
 --parse commands as they are received
 function parseCommand(command)
   print("Received: ", command)
@@ -211,7 +207,6 @@ function parseCommand(command)
   end
 end
 
-
 --send request for control states periodically to the queueCommand
 function pulse()
   --getState()
@@ -248,8 +243,6 @@ function sendDelaySet(ctl)  -- Set flag to wait for ACK or Timeout before sendin
   end  
 end
 sendDelayTimer.EventHandler = sendDelaySet
-
-
 
 -- Startup --
 function Startup()
