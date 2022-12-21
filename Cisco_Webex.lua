@@ -1,5 +1,3 @@
-
-
 -- constants
 ssh = Ssh.New()
 address = Controls.ipAddress.String
@@ -121,13 +119,11 @@ monitor_mode.EventHandler = function ()
   Send("xConfiguration Video Monitors: "..monitor_mode.String)
 end
 
-
 function Send(str)
   if ssh.IsConnected then
     ssh:Write(str.."\n")
     print("Sent "..str)
   end
 end
-
 
 ssh:Connect(address, port, username, password)
