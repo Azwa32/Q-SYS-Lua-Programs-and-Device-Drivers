@@ -8,7 +8,6 @@ fault = Controls.Fault_Status
 --Eventhandlers
 -------------------------
 
-
 --status
 for i = 1, #status do
   status[i].EventHandler = function ()
@@ -22,7 +21,6 @@ for i = 1, #status do
   end 
 end 
 
-
 --value
 for k = 1, #val do
   val[k].EventHandler = function ()
@@ -30,8 +28,6 @@ for k = 1, #val do
       print(os.date()..' | value '..k..' mode'..v)
   end 
 end 
-
-
 
 --fault status
 fault.EventHandler = function ()
