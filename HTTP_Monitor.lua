@@ -55,9 +55,7 @@ end
 
 --EventHandlers
 poll.EventHandler = getStatus  --runs when timer ticks
-
 go.EventHandler = getStatus --manual trigger
-
 address.EventHandler = Startup -- run startup when address is changed
 
 Startup()
