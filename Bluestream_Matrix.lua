@@ -119,13 +119,6 @@ function fb_capture()
     fb_output_from()
   end
 end
-  
- 
-
-  
-
-
-
 
 -- Logic Ternary -- not sure what it does but is uesd to retreive character location below
 function logic_ternary(condition, if_true, if_false)
