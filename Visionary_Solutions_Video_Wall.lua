@@ -18,7 +18,6 @@ VCContentDecoder = 19
 VideoWallSize = 18
 VCcontentAuto = false    --true = auto content select, false = manual select from IRC
 
-
 Encoder = {
   [0] = {['CompName'] = '', ['IP'] = '', ['Name'] = 'No_Image', ['Color'] = 'black'},
   [1] = {['CompName'] = 'ENC1', ['IP'] = '192.168.101.150', ['Name'] = 'PC1', ['Color'] = 'green'},
