@@ -161,11 +161,11 @@ Switch.Data = function()
       end
       -- run for switch 1
       if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/%s', port_number) then
-        Controls['Mac Address SW1'][port].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
+        Controls['Mac Address SW1'][port_number].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
       end
       -- run for switch 2
       if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/%s', port_number) then
-        Controls['Mac Address SW1'][port].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
+        Controls['Mac Address SW1'][port_number].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
       end
     end
     message = Switch:ReadLine(TcpSocket.EOL.Any)
