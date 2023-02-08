@@ -1,3 +1,6 @@
+----------------------
+-- Initialise
+----------------------
 
 Controls['Switch.Status'].Value = 4
 Controls['Switch.Status'].String = ''
