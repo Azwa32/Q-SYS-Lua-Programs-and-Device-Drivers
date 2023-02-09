@@ -43,12 +43,14 @@ function parseReturnCommand(message, ltable)
 end 
 end
 
+-- Start the subscription services 
 function startSubscriptions()
   Send("xFeedback Register /Status/Audio/Microphones/Mute")
   Send("xFeedback Register /Status/SystemUnit/State/NumberOfActiveCalls")
   Send("xFeedback Register Status/Standby/State")
 end
 
+-- Sync controls to the same state at the webex
 function getStartupStates()
   Send("xStatus Audio Microphones Mute")
   Send("xStatus SystemUnit State NumberOfActiveCalls")
