@@ -1,4 +1,4 @@
--- constants
+-- Initialise
 ssh = Ssh.New()
 address = Controls.ipAddress.String
 port = Controls.port.Value
