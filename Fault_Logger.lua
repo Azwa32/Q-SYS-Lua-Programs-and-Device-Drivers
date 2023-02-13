@@ -1,3 +1,6 @@
+-- Prints faults to the System Fault Log. The System Fault Log is non volatile so will 
+-- withstand a reboot of the equipment.
+
 --Initialise
 
 status = Controls.Status
