@@ -78,7 +78,6 @@ get = {power = true, input = true, picMute = true, volume = false}  -- Flags
 stack = {CMD.getPicMute,CMD.getInput,CMD.getPWRSTA}                 -- Stack init
 
 
-
 -- IR Controls
 
 -------------- Event Handlers ---------------
