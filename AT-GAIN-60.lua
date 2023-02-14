@@ -1,6 +1,5 @@
 -- control module for Atlona AT-GAIN-60 amplifier
 
-
 ------------------------------
 --Initialise
 ------------------------------
