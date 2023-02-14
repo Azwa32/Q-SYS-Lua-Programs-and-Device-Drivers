@@ -1,7 +1,6 @@
 -- Control module for Cisco 9300 switch
 -- retreives the 1st mac address available at each port
 
-
 ----------------------
 -- Initialise
 ----------------------
