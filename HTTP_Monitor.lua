@@ -1,3 +1,5 @@
+-- Uses a heartbeat pulse to determine if port 80 is accessable on a device.
+
 --Initialise
 status = Controls.status
 address = Controls.address
