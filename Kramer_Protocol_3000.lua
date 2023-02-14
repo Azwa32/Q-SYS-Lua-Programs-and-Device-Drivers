@@ -260,14 +260,15 @@ end
 
 
 function Select_Out_1_Input_6()
-  Controls['Output_1_Input_Button'][1].Boolean = false
-  Controls['Output_1_Input_Button'][2].Boolean = false
-  Controls['Output_1_Input_Button'][3].Boolean = false
-  Controls['Output_1_Input_Button'][4].Boolean = false
-  Controls['Output_1_Input_Button'][5].Boolean = false
-  Controls['Output_1_Input_Button'][6].Boolean = false
+  for input = 1, Controls['Output_1_Input_Button'] do
+    Controls['Output_1_Input_Button'][input].Boolean = false
+  end
   Controls['Output_1_Input_Button'][6].Boolean = true
   Out_1_Input_Logic()
+end
+
+for input = 1, Controls['Output_1_Input_Button'] do
+  Controls['Output_1_Input_Button'][input].Boolean = false
 end
 
 
