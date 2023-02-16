@@ -1,3 +1,5 @@
+--Module for control of Sony Bravia TV via TCP
+
 -- Original Script by Wes Wakefield
 -- Modified by Aaron Mitchell
 -- For Sony Bravia TCP Control
