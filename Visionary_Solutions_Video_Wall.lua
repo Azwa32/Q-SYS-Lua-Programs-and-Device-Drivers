@@ -1,3 +1,5 @@
+--Custom module for controlling a dynamic videowall configuration
+
 
 -- initialise controls and objects
 VWpreset = Controls.VWwindowingPreset
