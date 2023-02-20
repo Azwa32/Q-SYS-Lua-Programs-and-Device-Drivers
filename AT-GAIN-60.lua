@@ -1,5 +1,5 @@
 ------------------------------
---Global Variables
+--Initialise
 ------------------------------
 
 TCP = TcpSocket.New() --TCP Connection
