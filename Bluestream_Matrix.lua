@@ -78,7 +78,7 @@ for a = 1, #Controls.Input do
   end 
 end
 
--- Mute Output --
+-- Video Mute Output --
 for b,y in pairs(Mute) do
   Mute[b].EventHandler = function()
     if Mute[b].Boolean == true then
