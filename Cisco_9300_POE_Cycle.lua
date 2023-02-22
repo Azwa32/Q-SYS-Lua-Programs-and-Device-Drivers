@@ -12,6 +12,7 @@ Controls['Switch.IP_Address'].EventHandler = function()
     SwitchIP_Address_confun()
   end
 end
+switch_size = 48
 
 SwitchIP_AddressEventFunctions['IP_AddressChanged'] = function()
   -- TCP RE-CONNECT
@@ -159,11 +160,11 @@ Switch.Data = function()
         text_no = -8
       end
       -- run for switch 1
-      if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/1') then
+      if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/%s', port_number) then
         Controls['Mac Address SW1'][port].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
       end
       -- run for switch 2
-      if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/1') then
+      if string_contains(tostring(logic_ternary(((string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), text_no, -1)) == nil), function() return '' end, function() return (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), -7, -1)) end)), 'Gi1/0/%s', port_number) then
         Controls['Mac Address SW1'][port].String = (string.sub(tostring(logic_ternary((message == nil), function() return '' end, function() return message end)), 9, 22))
       end
     end
