@@ -92,7 +92,7 @@ ssh.LoginFailed = function()
     print("ssh LoginFailed")
 end
 
--- Standby
+-- Standby Button
 standby.EventHandler = function()
   if standby.Boolean == true then 
     Send("xCommand Standby Activate")
@@ -101,7 +101,7 @@ standby.EventHandler = function()
   end
 end
 
--- Mic Mute
+-- Mic Mute Button
 mic.EventHandler = function()
   if mic.Boolean == true then
     Send("xCommand Audio Microphones Mute")
