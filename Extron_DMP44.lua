@@ -1,3 +1,5 @@
+-- For contol of the DMP44 as an alternative to direct usb connection
+
 --Initialise
 
 InputGains = Controls.InputGains
