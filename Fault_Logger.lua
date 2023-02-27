@@ -1,5 +1,6 @@
 -- Prints faults to the System Fault Log. The System Fault Log is non volatile so will 
--- withstand a reboot of the equipment.
+-- withstand a reboot of the equipment. Can be helpfull when a fault with the system has caused 
+-- an outage of some kind
 
 --Initialise
 
