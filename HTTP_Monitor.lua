@@ -47,7 +47,7 @@ function getStatus()
   HttpClient.Download { Url = 'http://'..addr, Headers = { ["Content-Type"] = "application/json" } , Timeout = 30, EventHandler = done }
 end
 
---startup functions 
+--Startup functions 
 function Startup()
   address = Controls.address
   status.Value = 2
