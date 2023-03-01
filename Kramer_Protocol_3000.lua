@@ -188,7 +188,7 @@ end
 
 
 function Select_Out_1_Input_1()
-  for input = 1, 6 do
+  for input = 1, #Controls['Output_1_Input_Button'] do
     Controls['Output_1_Input_Button'][input].Boolean = false
   end
   Controls['Output_1_Input_Button'][1].Boolean = true
@@ -197,7 +197,7 @@ end
 
 
 function Select_Out_1_Input_2()
-  for input = 1, 6 do
+  for input = 1, Controls['Output_1_Input_Button'] do
     Controls['Output_1_Input_Button'][input].Boolean = false
   end
   Controls['Output_1_Input_Button'][2].Boolean = true
