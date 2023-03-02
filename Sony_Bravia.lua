@@ -13,7 +13,7 @@ keepAlive = Timer.New()
 SonyBravia.ReconnectTimeout = 2
 setInput = Controls['setInput']
 
-CMD = {                                    -- Sony commands for making the display do things
+CMD = {                                             -- Sony commands for making the display do things
   setPWR1="*SCPOWR0000000000000001\x0A",
   setPWR0="*SCPOWR0000000000000000\x0A",
   getPWRSTA="*SEPOWR################\x0A",
@@ -22,7 +22,7 @@ CMD = {                                    -- Sony commands for making the displ
   setInHDMI3="*SCINPT0000000100000003\x0A",
   setInHDMI4="*SCINPT0000000100000004\x0A",
   getInput="*SEINPT################\x0A",
-  setAudioVolume="*SCVOLU00000000000000", --- Add last 2 digits and a LF when used, ie: setAudioVolume.."50\x0A"
+  setAudioVolume="*SCVOLU00000000000000",           --- Add last 2 digits and a LF when used, ie: setAudioVolume.."50\x0A"
   getAudioVolume="*SEVOLU################\x0A",
   getMacAddress="*SEMADReth0############\x0A",
   setPicMuteON="*SCPMUT0000000000000001\x0A",
