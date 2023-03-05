@@ -28,7 +28,6 @@ HeartbeatTime = 10
 -- TCP Socket --
 TCP.EventHandler = function(sock, evt, err) --Event Handler for the TCP socket
 
-
   if evt == TcpSocket.Events.Connected then
     print("socket connected")
     status.String = "OK"
