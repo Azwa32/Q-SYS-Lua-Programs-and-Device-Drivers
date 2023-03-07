@@ -1,3 +1,5 @@
+-- Control module for Blustream HDMI Matrix
+
 ------------------------------
 --Initialise
 ------------------------------
