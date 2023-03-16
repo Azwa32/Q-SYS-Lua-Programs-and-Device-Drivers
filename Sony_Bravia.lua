@@ -57,7 +57,6 @@ fb = {                                    -- Responses from display
   nInHDMI2="*SNINPT0000000100000002",
   nInHDMI3="*SNINPT0000000100000003",
   nInHDMI4="*SNINPT0000000100000004",
-  --nInTV="*SNINPT0000000000000000",
   nInHome="*SCIRCC0000000000000000",
   --nAudioVolume="*SNVOLU00000000000000", -- Add last 2 digits and a LF when used, ie: setAudioVolume.."50\x0A"
   nPicMuteON="*SNPMUT0000000000000001",
