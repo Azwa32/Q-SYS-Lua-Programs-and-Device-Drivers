@@ -1,5 +1,5 @@
 --Custom module for controlling a dynamic videowall configuration. 
--- Allows video wall windows to be changed on the fly
+-- Allows video wall window size and source and  to be changed on the fly
 
 
 -- initialise controls and objects
