@@ -1,4 +1,4 @@
---Custom module for controlling a dynamic videowall configuration. 
+-- Custom module for controlling a dynamic videowall configuration. 
 -- Allows video wall window size and source and  to be changed on the fly
 
 
