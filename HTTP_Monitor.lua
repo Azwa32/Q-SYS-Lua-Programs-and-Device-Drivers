@@ -1,7 +1,6 @@
 -- Uses a heartbeat pulse to determine if port 80 is accessable on a device.
 -- can be used as an alternative to a ping. Can give a stronger response than a ping
 
-
 --Initialise
 status = Controls.status
 address = Controls.address
